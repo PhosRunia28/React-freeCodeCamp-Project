@@ -7,4 +7,8 @@ export const links = [
     to: "/randomColor",
     name: "Random Color",
   },
+  {
+    to: "/starRating",
+    name: "Star Rating",
+  },
 ];
