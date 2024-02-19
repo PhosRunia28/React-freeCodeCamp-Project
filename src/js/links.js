@@ -11,4 +11,8 @@ export const links = [
     to: "/starRating",
     name: "Star Rating",
   },
+  {
+    to: "/imageSlider",
+    name: "Image Slider",
+  },
 ];

@@ -24,7 +24,7 @@ export default function StarRating() {
           return (
             <div
               className={cn("fa fa-star bg-red fa-3x sm:fa-4x cursor-pointer", {
-                checked: index <= (hover || rating),
+                "text-orange-400": index <= (hover || rating),
               })}
               key={index}
               onClick={() => handleClick(index)}
