@@ -15,4 +15,8 @@ export const links = [
     to: "/imageSlider",
     name: "Image Slider",
   },
+  {
+    to: "/loadMore",
+    name: "Load More",
+  },
 ];

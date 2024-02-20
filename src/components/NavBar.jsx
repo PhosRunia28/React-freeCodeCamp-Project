@@ -1,4 +1,5 @@
 import { Cross2Icon, DoubleArrowDownIcon } from "@radix-ui/react-icons";
+import cn from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { links } from "../js/links";
@@ -33,12 +34,15 @@ export default function NavBar({ setOpenNav, openNav }) {
                   <NavLink
                     to={link.to}
                     key={index}
-                    className="textNa mx-auto w-full max-w-[12rem] rounded-xl bg-bgButtonNav px-6 py-2 text-center text-textNav"
-                    style={({ isActive }) => {
-                      return {
-                        fontWeight: isActive ? "bold" : "",
-                      };
-                    }}
+                    className={({ isActive }) =>
+                      cn(
+                        "textNa mx-auto w-full max-w-[12rem] rounded-xl px-6 py-2 text-center ",
+                        {
+                          "bg-black font-bold text-white": isActive,
+                          "bg-bgButtonNav text-textNav": !isActive,
+                        },
+                      )
+                    }
                   >
                     {link.name}
                   </NavLink>

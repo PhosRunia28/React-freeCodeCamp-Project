@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Accordion from "./components/Accordion";
 import ImageSlider, { ImageSliderLoader } from "./components/ImageSlider";
+import LoadMore from "./components/LoadMore";
 import Project from "./components/Project";
 import ProjectError from "./components/ProjectError";
 import RandomColor from "./components/RandomColor";
@@ -22,6 +23,7 @@ function App() {
           path="imageSlider"
           loader={ImageSliderLoader}
         />
+        <Route element={<LoadMore />} path="loadMore" />
       </Route>,
     ),
   );
