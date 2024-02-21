@@ -19,4 +19,12 @@ export const links = [
     to: "/loadMore",
     name: "Load More",
   },
+  {
+    to: "/toggleSwitch",
+    name: "Toggle Switch",
+  },
+  {
+    to: "/qrCodeGenerator",
+    name: "Qr Code Generator",
+  },
 ];
