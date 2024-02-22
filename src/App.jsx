@@ -11,7 +11,9 @@ import Project from "./components/Project";
 import ProjectError from "./components/ProjectError";
 import QrCodeGenerator from "./components/QrCodeGenerator";
 import RandomColor from "./components/RandomColor";
+import ScrollIndicator from "./components/ScrollIndicator";
 import StarRating from "./components/StarRating";
+import Tabs from "./components/Tabs";
 import ToggleSwitch from "./components/ToggleSwitch";
 function App() {
   const router = createBrowserRouter(
@@ -28,6 +30,8 @@ function App() {
         <Route element={<LoadMore />} path="loadMore" />
         <Route element={<ToggleSwitch />} path="toggleSwitch" />
         <Route element={<QrCodeGenerator />} path="qrCodeGenerator" />
+        <Route element={<ScrollIndicator />} path="scrollIndicator" />
+        <Route element={<Tabs />} path="tabs" />
       </Route>,
     ),
   );

@@ -27,4 +27,12 @@ export const links = [
     to: "/qrCodeGenerator",
     name: "Qr Code Generator",
   },
+  {
+    to: "/scrollIndicator",
+    name: "Scroll Indicator",
+  },
+  {
+    to: "/tabs",
+    name: "Tabs",
+  },
 ];
