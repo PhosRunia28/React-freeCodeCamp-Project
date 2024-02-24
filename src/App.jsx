@@ -5,8 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Accordion from "./components/Accordion";
+import GithubProfileFinder from "./components/GithubProfileFinder";
 import ImageSlider, { ImageSliderLoader } from "./components/ImageSlider";
 import LoadMore from "./components/LoadMore";
+import ModalPopup from "./components/ModalPopup";
 import Project from "./components/Project";
 import ProjectError from "./components/ProjectError";
 import QrCodeGenerator from "./components/QrCodeGenerator";
@@ -32,6 +34,8 @@ function App() {
         <Route element={<QrCodeGenerator />} path="qrCodeGenerator" />
         <Route element={<ScrollIndicator />} path="scrollIndicator" />
         <Route element={<Tabs />} path="tabs" />
+        <Route element={<ModalPopup />} path="modalPopup" />
+        <Route element={<GithubProfileFinder />} path="githubProfile" />
       </Route>,
     ),
   );

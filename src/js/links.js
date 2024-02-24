@@ -35,4 +35,12 @@ export const links = [
     to: "/tabs",
     name: "Tabs",
   },
+  {
+    to: "/modalPopup",
+    name: "Modal Popup",
+  },
+  {
+    to: "/githubProfile",
+    name: "Github Profile Finder",
+  },
 ];
