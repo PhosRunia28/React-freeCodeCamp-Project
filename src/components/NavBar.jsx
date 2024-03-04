@@ -36,7 +36,7 @@ export default function NavBar({ setOpenNav, openNav }) {
                     key={index}
                     className={({ isActive }) =>
                       cn(
-                        "textNa mx-auto w-full max-w-[12rem] rounded-xl px-6 py-2 text-center ",
+                        "mx-auto flex w-full max-w-[12rem] items-center justify-center rounded-xl px-6 py-2 text-center",
                         {
                           "bg-black font-bold text-white": isActive,
                           "bg-bgButtonNav text-textNav": !isActive,

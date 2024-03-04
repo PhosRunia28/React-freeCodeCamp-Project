@@ -13,7 +13,7 @@ export default function Tabs() {
     <main className="absolute left-1/2 top-1/2 mx-auto w-full max-w-xl -translate-x-1/2 -translate-y-1/2 px-4 font-openSans">
       <div className="flex flex-col justify-center gap-10">
         <div className="flex flex-wrap justify-center gap-5">
-          {[...Array(content.length)].map((_, index) => {
+          {content.map((_, index) => {
             return (
               <button
                 type="button"
