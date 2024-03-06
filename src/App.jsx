@@ -14,6 +14,7 @@ import ProjectError from "./components/ProjectError";
 import QrCodeGenerator from "./components/QrCodeGenerator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/ScrollIndicator";
+import ScrollToTop from "./components/ScrollToTop";
 import StarRating from "./components/StarRating";
 import Tabs from "./components/Tabs";
 import ToggleSwitch from "./components/ToggleSwitch";
@@ -36,6 +37,7 @@ function App() {
         <Route element={<Tabs />} path="tabs" />
         <Route element={<ModalPopup />} path="modalPopup" />
         <Route element={<GithubProfileFinder />} path="githubProfile" />
+        <Route element={<ScrollToTop />} path="scrollToTop" />
       </Route>,
     ),
   );

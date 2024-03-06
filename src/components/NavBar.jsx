@@ -34,6 +34,7 @@ export default function NavBar({ setOpenNav, openNav }) {
                   <NavLink
                     to={link.to}
                     key={index}
+                    onClick={() => setOpenNav(false)}
                     className={({ isActive }) =>
                       cn(
                         "mx-auto flex w-full max-w-[12rem] items-center justify-center rounded-xl px-6 py-2 text-center",

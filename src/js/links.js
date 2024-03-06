@@ -43,4 +43,12 @@ export const links = [
     to: "/githubProfile",
     name: "Github Profile Finder",
   },
+  {
+    to: "/scrollToTop",
+    name: "Scroll to Top",
+  },
+  {
+    to: "/recipeApp",
+    name: "Recipe App",
+  },
 ];
